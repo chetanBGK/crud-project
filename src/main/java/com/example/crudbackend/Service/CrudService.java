@@ -11,9 +11,13 @@ import java.util.List;
 @Service
 public class CrudService {
 
-    @Autowired
-    private CrudRepository crudRepository;
+    // @Autowired
+    // private CrudRepository crudRepository;
 
+    CrudService(CrudRepository crudRepository) {
+        this.crudRepository = crudRepository;
+    }
+    
     public List<Crud> getCrud() {
         return crudRepository.findAll();
     }
