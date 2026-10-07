@@ -22,7 +22,7 @@ spec:
         kubernetes.io/hostname: ip-172-31-42-240
       containers:
       - name: frontend
-        image: 819168518875.dkr.ecr.ap-south-1.amazonaws.com/crud-frontend:16
+        image: 819168518875.dkr.ecr.ap-south-1.amazonaws.com/crud-frontend:${IMAGE_TAG}
         env:
         - name: REACT_APP_BACKEND_URL
           value: "http://backend:8080"
