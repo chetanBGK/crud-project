@@ -12,7 +12,7 @@ import java.util.List;
 public class CrudService {
 
     // @Autowired
-    // private CrudRepository crudRepository;
+    private CrudRepository crudRepository;
 
     CrudService(CrudRepository crudRepository) {
         this.crudRepository = crudRepository;
