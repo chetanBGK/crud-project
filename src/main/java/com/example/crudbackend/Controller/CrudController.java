@@ -13,8 +13,12 @@ import java.util.List;
 @CrossOrigin(origins = "http://localhost:5173/")
 public class CrudController {
 
-    @Autowired
-    private CrudService crudService;
+    // @Autowired
+    // private CrudService crudService;
+
+    CrudController(CrudService crudService){
+        this.crudService = crudService;
+    }
 
     @GetMapping
     public List<Crud> getCrud() {
