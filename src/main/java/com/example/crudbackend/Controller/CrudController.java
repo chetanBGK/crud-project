@@ -14,7 +14,7 @@ import java.util.List;
 public class CrudController {
 
     // @Autowired
-    // private CrudService crudService;
+    private CrudService crudService;
 
     CrudController(CrudService crudService){
         this.crudService = crudService;
