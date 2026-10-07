@@ -20,7 +20,7 @@ spec:
         kubernetes.io/hostname: ip-172-31-42-240
       containers:
       - name: backend
-        image: 819168518875.dkr.ecr.ap-south-1.amazonaws.com/crud-backend:16
+        image: 819168518875.dkr.ecr.ap-south-1.amazonaws.com/crud-backend:${IMAGE_TAG}
         env:
         - name: DB_HOST
           value: "mysql"
